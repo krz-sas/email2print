@@ -1,0 +1,10 @@
+[Unit]
+Description=Check e-mail and print
+ConditionACPower=true
+After=cups.service network.target network-online.target systemd-networkd.service NetworkManager.service connman.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /usr/local/bin/email2print.py
+KillMode=process
+TimeoutStopSec=120
