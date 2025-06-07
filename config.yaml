@@ -1,0 +1,11 @@
+imap_server: imap.gmail.com
+imap_port: 993
+user: <youremail@gmail.com>
+password: <dead beef dead beef>
+printer: <LPD_printer_name>
+printer_params: -o fit-to-page -o media=A4 -o sides=two-sided-long-edge 
+dl_location: /tmp
+polling_interval: 300
+paperless_enable: true
+paperless_host: <http://paperless_host:8000>
+paperless_token: <paperless_auth_token>
